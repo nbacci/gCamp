@@ -51,11 +51,13 @@
     </div>
   </div>
 
-  <div class = "quotes">
-    <% @quotes.each do |quote| %>
-    <ul><h3 class="list-styled"></h3>
-      <%= quote %>
-    </ul>
+  <div class = "container">
+    <% @quotes.each do |sub_quote| %>
+      <% sub_quote.each do |x| %>
+        <ul class="list-unstyled">
+          <%= x %>
+        </ul>
+      <% end %>
     <% end %>
   </div>
 </div>
