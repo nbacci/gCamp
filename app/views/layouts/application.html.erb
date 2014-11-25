@@ -16,13 +16,13 @@
   <div class="container">
     <%= yield %>
     <hr>
-  </div>
 
-  <div class="container" "panel-footer">
-    <%= link_to 'About', '/about' %>
-    |
-    <%= link_to 'Terms', '/terms' %>
-    <br></br>
+    <footer>
+      <%= link_to "About", about_path %> |
+      <%= link_to "Terms", terms_path %> |
+      <%= link_to "FAQ", faq_path %>
+      <br></br>
+    </footer>
   </div>
 </body>
 </html>
